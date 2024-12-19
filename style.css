@@ -1,0 +1,197 @@
+body {
+  /* background-color: green; */
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.item1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  grid-area: Deck;
+  border: 5px solid rgb(14, 98, 15);
+  border-radius: 40%;
+  height: 20vh;
+  width: 15vw;
+  height: 15vw;
+}
+.item2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  grid-area: Dealer-cards;
+  height: 25vh;
+  width: 40vw;
+}
+.item3 {
+  grid-area: Header;
+  /* border: 2px solid rgb(232, 10, 214); */
+}
+.item4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 150px;
+  justify-content: center;
+  grid-area: Pot;
+  /* border: 2px solid rgb(1, 0, 3); */
+  height: 40vh;
+  width: 20vw;
+  /* margin-top: 40%; */
+}
+.item5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  grid-area: Player-hit;
+  /* border: 2px solid rgb(13, 15, 0); */
+  height: 5vh;
+  /* margin-top: 7%; */
+}
+.item6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: Player-cards;
+  /* border: 2px solid rgb(14, 94, 39); */
+  width: 40vw;
+  height: 25vh;
+}
+.item7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  grid-area: Dealer-score;
+  /* border: 2px solid rgb(252, 2, 2); */
+  height: 10vh;
+  width: 25vw;
+  /* margin-top: 10%; */
+}
+.item8 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  grid-area: Player-score;
+  /* border: 2px solid rgb(252, 2, 2); */
+  height: 10vh;
+  width: 25vw;
+  margin-top: 15%;
+}
+.points {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 10%;
+  width: 25vw;
+  grid-area: Points;
+  /* border: 2px solid rgb(252, 2, 2); */
+}
+.footer {
+  grid-area: Footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "Header         Dealer-cards      Deck"
+    "Dealer-score   Dealer-cards      Deck"
+    "Points         Player-hit        Pot"
+    "Player-score   Player-cards      Pot";
+
+  gap: 15px;
+  background-color: none;
+  padding: 10px;
+  /* display: flex;
+    flex-direction: column; */
+  /* border: 2px solid brown; */
+}
+
+.grid-container > div {
+  background-color: none;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+img {
+  height: 125px;
+  /* border: 1px solid black; */
+}
+
+#points {
+  background-color: gold;
+}
+
+#dealerScore,
+#playerScore,
+#points {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+li {
+  /* width: 100px; */
+  display: inline;
+}
+#dealButton {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  /* background-color: rgb(246, 224, 224); */
+  border: #222 1px solid;
+}
+#hitButton,
+#stayButton {
+  width: 75px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  border: #222 1px solid;
+}
+h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #222;
+}
+
+.header {
+  font-size: 25px;
+  color: #222;
+  margin: 0;
+  padding: 0%;
+}
+
+.rounded-borders {
+  border: 2px solid rgb(208, 208, 27);
+  border-radius: 70px;
+}
+pre {
+  font-size: 20px;
+  color: rgb(197, 175, 51);
+}
